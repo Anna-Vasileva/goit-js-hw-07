@@ -27,7 +27,6 @@ const rand = () => {
   return Math.floor(Math.random() * 256);
 };
 const onRenderButton = () => {
-  //   console.log(amount);
   createBoxes(amount);
 };
 const onInputChange = (event) => {
@@ -39,10 +38,7 @@ const destroyBoxes = () => {
   width = 20;
   height = 20;
 };
-// const onInputChange = (event) => {};
 
-// inputEl.addEventListener("input", onInputChange);
-// createBoxes(amount);
 inputEl.addEventListener("input", onInputChange);
 btnRenderEl.addEventListener("click", onRenderButton);
 btnDestroyEl.addEventListener("click", destroyBoxes);
